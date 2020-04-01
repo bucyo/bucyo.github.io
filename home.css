@@ -1,0 +1,558 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+a:hover {
+  text-decoration: none;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  padding-bottom: 20px;
+}
+
+.oya {
+  position: relative;
+}
+
+/* ナビバー PC *//* ナビバー PC *//* ナビバー PC */
+.navitem-pc {
+  list-style: none;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.navlist-pc {
+  display: flex;
+  justify-content: flex-end !important;
+  padding-right: 20px;
+  line-height: 36px;
+}
+
+
+.navmenu-pc {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  display: block;
+}
+
+.name {
+  letter-spacing: 0.1em;
+  text-align: center;
+  position: absolute;
+  top: 12%;
+  left: 8%;
+  color: rgb(215, 242, 255);
+  font-size: 200%;
+}
+
+.navmenu-pc a {
+  text-decoration: none;
+  color: rgb(49, 49, 49);
+}
+
+.navmenu-pc a:hover {
+  text-decoration: none;
+}
+/* ナビバー PC *//* ナビバー PC *//* ナビバー PC */
+
+/* ナビバー  スマホ *//* ナビバー  スマホ */
+  @media(max-width: 670px) {
+    .navmenu-pc {
+      display: none !important;
+    }
+    .menu-bar {
+      display: block !important;
+    }
+  }
+
+  .menu-bar {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 9999;
+    padding: 0;
+  }
+
+  .nav-un {
+    display: none;
+  }
+
+  #nav-open {
+    font-size: 20px;
+    border: solid 1px black;
+    padding: 4px 28px 3px 10px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  #nav-close {
+    font-size: 20px;
+    border: solid 1px black;
+    padding: 4px 25px 3px 10px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+
+  }
+
+  .menu-content {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 20%;
+    opacity: 0;
+  }
+
+  .menu-content a {
+    color: white;
+    display: block;
+    padding: 20px 0 20px 6px;
+
+  }
+
+  .menu-content a:hover {
+    background-color: rgb(255, 255, 255,0.5);
+    color: white;
+    transition: 0.5s;
+    text-decoration: none;
+  }
+
+  .menu-list {
+    list-style: none;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding-left: 0;
+  }
+
+  .nav-item {
+    border-bottom: 1px solid white;
+  }
+
+  #menu-input:checked ~ #nav-close {
+    display: block!important;
+  }
+
+  #menu-input:checked ~ #nav-open {
+    display: none!important;
+  }
+
+  #menu-input:checked ~ .menu-content {
+    opacity: 1;
+    transition: 0.5s;
+  }
+  
+
+/* ナビバー  スマホ *//* ナビバー  スマホ */
+
+
+
+/* 自己紹介 *//* 自己紹介 *//* 自己紹介 */
+.con1 {
+  margin: 0 0 40px 0;
+  padding: 20px 0 50px 0;
+}
+
+.row {
+  margin-top: 30px;
+}
+
+.link {
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+.src {
+  display: none;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.srcc {
+  font-weight: bold;
+}
+.leftbox {
+  text-align: center;
+}
+
+.rightbox {
+  line-height: 30px;
+  font-size: 17px;
+}
+
+.ri a:hover {
+  text-decoration: none;
+}
+
+@media(max-width: 480px), (max-width: 1000px) {
+  .rightbox {
+    text-align: center;
+  }
+  .srcc {
+    display: none;
+  }
+
+  .src {
+    display: block;
+  }
+}
+
+.twi {
+  color:#6ca3f6;
+  font-size: 30px;
+}
+
+.twi:hover {
+  color: rgb(188, 228, 255)
+}
+
+.you {
+  color: rgb(252, 24, 24);
+  font-size: 30px;
+}
+
+.you:hover {
+  color: rgb(255, 100, 100);
+}
+
+
+/* 自己紹介 *//* 自己紹介 *//* 自己紹介 */
+
+/* スキル *//* スキル *//* スキル */
+
+.haikei {
+  position: relative;
+  background: #ddd url(programming-1873854_1280.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+}
+
+.haikei::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(66, 64, 64, 0.6);
+}
+
+.web {
+  color: white; /*なぜかバックグラウンドカラーの後ろに隠れる*/
+  text-align: center;
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+.hai-item {
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  padding: 20px;
+}
+
+.hai-item p {
+  margin: 40px 0 30px;}
+
+.ht {
+  color: rgb(255, 72, 72);
+  font-size: 70px;
+}
+
+.jq {
+  color: rgb(188, 119, 253);
+  font-size: 70px;
+
+}
+
+.ph {
+  color: rgb(255, 229, 85);
+  font-size: 70px;
+}
+
+.wo {
+  color: rgb(55, 124, 252);
+  font-size: 70px;
+}
+/* スキル *//* スキル *//* スキル */
+
+/* スキル２ *//* スキル２ *//* スキル２ */
+.haikei2 h2 {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+.haikei2 {
+  background: #ddd url(voice-search-1792301_1280.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.haikei2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(224, 221, 221, 0.6);
+}
+
+.hai-item2 {
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    line-height: 30px;
+    padding: 20px;
+  }
+
+.hai-item2 p {
+  margin: 40px 0 30px;  }
+
+.hai-item2 a:hover {
+  text-decoration: none;
+}
+
+.bl {
+  font-size: 70px;
+}
+
+.bt {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  background-image: none;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+
+.blog {
+  border: solid 1px #f7bf45;
+  color: #f7bf45;
+}
+
+.blog:hover {
+  background-color: #f7bf45;
+  color: white;
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+.youtube {
+  border: solid 1px #f33030;
+  color: #f33030;
+}
+.youtube:hover {
+  background-color:#f33030;
+  color: white;
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+.twitter {
+  border: solid 1px #11b4ff;
+  color:#11b4ff;
+}
+.twitter:hover {
+  background-color:#11b4ff;
+  color: white;
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+/* スキル２ *//* スキル２ *//* スキル２ */
+
+/* サービス *//* サービス *//* サービス */
+.ser {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+
+.ser-m {
+  margin-bottom: 60px;
+}
+
+.lefbox {
+  text-align: center;
+}
+
+.rig-h {
+  border-bottom: 1px solid black;
+  padding-bottom: 12px;
+}
+
+.rigbox p {
+  font-size: 17px;
+  line-height: 40px;
+
+}
+
+/* サービス *//* サービス *//* サービス */
+
+/* ワークス *//* ワークス *//* ワークス */
+
+.haikei3 {
+  background: #ddd url(green-2594873_1920.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  padding-top: 1px;
+  padding-bottom: 50px;
+}
+
+.h-item{
+  font-size: 40px;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.p-item {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* ホバーの動き */
+.sample3 {
+	width:  100%;
+	height: 100%;
+	overflow:		hidden;
+  position:		relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ホバーした時の表示 */
+.sample3 .caption {
+	font-size:		130%;
+	color:			#fff;
+	padding-top:		80px;
+  padding-left:		0px;
+  text-align: left;
+}
+
+.sample3 .mask {
+	height:			100%;
+	position:		absolute;
+	top:			0;
+  left: 10%;
+  right: 10%;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);
+	-webkit-transition:	all 0.6s ease;
+	transition:		all 0.6s ease;
+}
+.sample3:hover .mask {
+	opacity:		1;	/* マスクを表示する */
+	padding-left:		90px;	/* 右にずらす */
+}
+
+/* ホバー時の文字 */
+.s-item {
+  border-bottom: 2px solid rgb(204, 202, 202);
+  font-size: 15px;
+}
+
+.s-item2 {
+  font-size: 25px;
+}
+
+/* ワークス *//* ワークス *//* ワークス */
+
+
+/* 問い合わせ *//* 問い合わせ *//* 問い合わせ */
+.haikei4 {
+  text-align: center;
+  background: rgb(246, 254, 255) no-repeat center;
+  background-size: cover;
+  padding-top: 40px;
+}
+
+
+.hai4-twi {
+  font-size: 100px;
+  color: #6ca3f6;
+}
+
+.center {
+  text-align: center;
+}
+
+.form {
+  text-align: center;
+  margin-top: 50px;
+}
+/* 問い合わせ *//* 問い合わせ *//* 問い合わせ */
+
+/* 最後 */
+  .left {
+    text-align: center;
+  }
+
+  .right {
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0 1.5em 15px;
+    padding: 7px 10px;
+    width: 60%;
+    color: #555;
+    font-size: 130%;
+    background: #e0edff;
+  }
+
+  .right::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #e0edff;
+  }
+
+  .right p {
+    margin: 0;
+    padding: 0;
+  }
+
+  #by {
+    text-align: right;
+    font-size: 15px;
+  }
+/* 最後 */
+
+
+/* フッター */
+footer {
+  text-align: center;
+  font-size: 15px;
+  background-color: white;
+  height: 80px;
+  padding: 30px;
+}
+
+
+
+
+
