@@ -66,14 +66,64 @@ h3 {
 /* ナビバー PC *//* ナビバー PC *//* ナビバー PC */
 
 /* ナビバー  スマホ *//* ナビバー  スマホ */
-  @media(max-width: 670px) {
+  @media(max-width: 1200px) {
+
+    .name p {
+      font-size: 3rem;
+      text-align: left;
+    }
+
+    .name {
+      margin-top: 30%;
+    }
+
+
+
     .navmenu-pc {
       display: none !important;
     }
     .menu-bar {
       display: block !important;
+      position: static !important;
     }
+
+    #nav-open {
+      padding: 4px 10px 3px 10px !important;
+    }
+
+    #nav-close {
+      padding: 4px 10px 3px 10px !important;
+    }
+
+    .rig-h {
+      font-size: 22px;
+    }
+
+    .sample3 .caption {
+      font-size: 110%;
+      padding-top: 10px !important;
+    }
+
+   .sample3:hover .mask {
+      padding-left: 35px !important;
   }
+
+  .left img {
+    width: 100%;
+    margin-top: 38px;
+  }
+
+  .right {
+    margin: 2.5em 0 2.5em 0px !important;
+    padding: 7px 10px !important;
+    width: 100% !important;
+    font-size: 126% !important;
+  }
+
+
+}
+
+  /* レスポンシブ要素　ここまで */
 
   .menu-bar {
     display: none;
