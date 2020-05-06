@@ -560,6 +560,10 @@ h3 {
     text-align: center;
   }
 
+  .left img {
+    width: 100%;
+  }
+
   .right {
     position: relative;
     display: inline-block;
